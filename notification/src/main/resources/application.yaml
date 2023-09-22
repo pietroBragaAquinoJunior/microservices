@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: ead-notification-service
+  config:
+    import: 'configserver:'
+  cloud:
+    config:
+      discovery:
+        service-id: ead-config-server
+      username: configserver
+      password: 'ead123cs'
